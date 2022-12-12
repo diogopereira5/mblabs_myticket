@@ -1,8 +1,22 @@
 import React from 'react';
-import { View } from 'react-native';
+
+import Background from '../../components/Background';
+import Header from '../../components/Header';
+import Search from '../../components/Search';
+
+import { Container } from './styles';
 
 const Home: React.FC = () => {
-  return <View />;
+  return (
+    <Background>
+
+      <Container>
+        <Header />
+        <Search />
+      </Container>
+
+    </Background>
+  );
 }
 
 export default Home;
