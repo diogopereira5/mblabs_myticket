@@ -6,6 +6,7 @@ import {
 } from "react-native";
 
 import Background from '../../components/Background';
+import EventCard from '../../components/EventCard';
 import Header from '../../components/Header';
 import Search from '../../components/Search';
 
@@ -19,9 +20,10 @@ const Home: React.FC = () => {
     <Background>
 
       <Header />
-      
+
       <Container>
         <Search />
+        <EventCard />
       </Container>
 
     </Background>
