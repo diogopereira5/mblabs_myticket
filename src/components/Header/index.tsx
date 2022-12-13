@@ -11,7 +11,7 @@ import {
 import { colors } from '../../styles/colors';
 import { useNavigation } from '@react-navigation/native';
 
-const Header: React.FC = () => {
+function Header() {
 
     const navigation: any = useNavigation()
 

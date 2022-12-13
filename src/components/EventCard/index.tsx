@@ -1,15 +1,22 @@
 import React from 'react';
 import { ButtonBottom, Container, Detail, DetailsContent, Locale, LogoImage, Title, TopContent, Value } from './styles';
 
-const EventCard: React.FC = () => {
+interface CardProps {
+    title: string,
+    desc: string,
+    locale: string,
+    image: string
+}
+
+function EventCard({ title, desc, locale, image }: CardProps) {
     return (
         <Container>
             <TopContent>
-                <LogoImage source={{ uri: "https://vejario.abril.com.br/wp-content/uploads/2022/05/Dia04_Mundo_CapitalInicial_ArielMartini_IHF_18.jpg" }} />
+                <LogoImage source={{ uri: image }} />
                 <DetailsContent>
-                    <Title>Rock</Title>
-                    <Detail>Lorem ipsuma description of a product to tes for a buy to item and revi...</Detail>
-                    <Locale>Espirito Santo</Locale>
+                    <Title>{title}</Title>
+                    <Detail>{desc}</Detail>
+                    <Locale>{locale}</Locale>
                 </DetailsContent>
             </TopContent>
             <ButtonBottom>

@@ -7,7 +7,7 @@ import {
 } from './styles';
 import { colors } from '../../styles/colors';
 
-const Search: React.FC = () => {
+function Search() {
     return (
         <Container>
             <Input placeholder="Faça uma busca" />

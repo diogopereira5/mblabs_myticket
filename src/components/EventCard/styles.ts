@@ -42,7 +42,7 @@ export const Locale = styled.Text`
     font-weight: bold;
 `;
 
-export const ButtonBottom = styled.View`
+export const ButtonBottom = styled.TouchableOpacity`
     background-color: ${colors.primary};
     height: 38px;
 
