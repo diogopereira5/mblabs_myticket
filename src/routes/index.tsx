@@ -1,19 +1,22 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import HomePage from "../pages/Home"
+import LoginPage from '../pages/Login';
 
-const Stack = createNativeStackNavigator();
+const Drawer = createDrawerNavigator();
 
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{
-        headerShown: false
+      <Drawer.Navigator screenOptions={{
+        headerShown: false,
+        drawerPosition: "right"
       }}>
-        <Stack.Screen name="Home" component={HomePage} />
-      </Stack.Navigator>
+        <Drawer.Screen name="Home" component={HomePage} />
+        <Drawer.Screen name="Login" component={LoginPage} />
+      </Drawer.Navigator>
     </NavigationContainer>
   );
 }

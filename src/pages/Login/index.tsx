@@ -1,9 +1,4 @@
-import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import {
-  TouchableOpacity,
-  Text
-} from "react-native";
 
 import Background from '../../components/Background';
 import Header from '../../components/Header';
@@ -11,16 +6,12 @@ import Search from '../../components/Search';
 
 import { Container } from './styles';
 
-const Home: React.FC = () => {
-
-  const navigation: any = useNavigation();
-
+const Login: React.FC = () => {
   return (
     <Background>
 
-      <Header />
-      
       <Container>
+        <Header />
         <Search />
       </Container>
 
@@ -28,4 +19,4 @@ const Home: React.FC = () => {
   );
 }
 
-export default Home;
+export default Login;
