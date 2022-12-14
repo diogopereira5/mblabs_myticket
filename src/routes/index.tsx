@@ -4,6 +4,8 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import HomePage from "../pages/Home"
 import LoginPage from '../pages/Login';
+import RegisterPage from '../pages/Register';
+import CheckoutPage from '../pages/Checkout';
 
 const Drawer = createDrawerNavigator();
 
@@ -16,6 +18,8 @@ function App() {
       }}>
         <Drawer.Screen name="Home" component={HomePage} />
         <Drawer.Screen name="Login" component={LoginPage} />
+        <Drawer.Screen name="Register" component={RegisterPage} />
+        <Drawer.Screen name="Checkout" component={CheckoutPage} />
       </Drawer.Navigator>
     </NavigationContainer>
   );

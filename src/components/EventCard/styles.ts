@@ -14,7 +14,7 @@ export const TopContent = styled.View`
 
 export const LogoImage = styled.Image`
     flex: 0.8;
-    height: ${Dimensions.get("window").width / 3};
+    height: ${Dimensions.get("window").width / 3}px;
     border-top-left-radius: 5px;
 `;
 

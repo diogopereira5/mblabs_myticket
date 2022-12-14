@@ -15,8 +15,7 @@ import {
   TextButtonOutline,
 } from './styles';
 
-const Login: React.FC = () => {
-
+const Register: React.FC = () => {
   return (
     <Background>
 
@@ -27,13 +26,14 @@ const Login: React.FC = () => {
 
         <FormContainer behavior={Platform.OS === "ios" ? "padding" : "height"}>
 
+          <InputField placeholder='Seu nome completo' />
           <InputField placeholder='Seu e-mail' />
           <InputField placeholder='Sua senha secreta' isPassword />
 
           <Button text="ENTRAR" />
 
           <ButtonOutline>
-            <TextButtonOutline>Novo aqui? Registre-se</TextButtonOutline>
+            <TextButtonOutline>Já possui conta? Acesse</TextButtonOutline>
           </ButtonOutline>
 
         </FormContainer>
@@ -44,4 +44,4 @@ const Login: React.FC = () => {
   );
 }
 
-export default Login;
+export default Register;
