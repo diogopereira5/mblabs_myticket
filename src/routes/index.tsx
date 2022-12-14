@@ -6,6 +6,7 @@ import HomePage from "../pages/Home"
 import LoginPage from '../pages/Login';
 import RegisterPage from '../pages/Register';
 import CheckoutPage from '../pages/Checkout';
+import SuccessPage from '../pages/Success';
 
 const Drawer = createDrawerNavigator();
 
@@ -16,10 +17,13 @@ function App() {
         headerShown: false,
         drawerPosition: "right"
       }}>
+
         <Drawer.Screen name="Home" component={HomePage} />
         <Drawer.Screen name="Login" component={LoginPage} />
         <Drawer.Screen name="Register" component={RegisterPage} />
         <Drawer.Screen name="Checkout" component={CheckoutPage} />
+        <Drawer.Screen name="SuccessPage" component={SuccessPage} />
+
       </Drawer.Navigator>
     </NavigationContainer>
   );

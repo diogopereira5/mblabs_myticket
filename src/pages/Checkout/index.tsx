@@ -1,5 +1,6 @@
 import React from 'react';
 import Background from '../../components/Background';
+import Button from '../../components/Button';
 import HeaderSecundary from '../../components/HeaderSecundary';
 
 import {
@@ -15,6 +16,7 @@ import {
     Item,
     Text,
     Value,
+    Content,
 } from './styles';
 
 const Checkout: React.FC = () => {
@@ -22,13 +24,15 @@ const Checkout: React.FC = () => {
         <Background>
             <HeaderSecundary title="Checkout" />
             <Container>
+
                 <CreditCardContainer>
                     <CreditCardBackGround1 />
                     <CreditCardBackGround2 />
                     <MainCreditCard>
+
                         <BrandLogo source={{ uri: "https://contents.hanzo.com.br/smartapps/loy/39/img_1657308138730-5002.png" }} />
+                        <NumberCard>5164  2304  7898  4150</NumberCard>
                         <NameCard>Diogo dos Santos Pereira</NameCard>
-                        <NumberCard>5164 2304 7898 4150</NumberCard>
 
                         <ButtonContent>
                             <Item>
@@ -42,6 +46,11 @@ const Checkout: React.FC = () => {
                         </ButtonContent>
                     </MainCreditCard>
                 </CreditCardContainer>
+
+                <Content>
+                    <Button text="Confirmar Pagamento" />
+                </Content>
+
             </Container>
         </Background>
     );

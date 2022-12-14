@@ -11,6 +11,7 @@ export const Container = styled.TouchableOpacity`
   border-radius: 5px;
 
   margin: 20px 0;
+  box-shadow: 1px 1px 5px #0005;
 `;
 
 export const Text = styled.Text`
